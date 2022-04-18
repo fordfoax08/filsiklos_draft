@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@700&display=swap');
+
+/* 
+font-family: 'Bebas Neue', cursive;
+font-family: 'Oswald', sans-serif;
+*/
+
+.main-menu{
+    position: fixed;
+    /* border: 1px solid green; */
+    height: calc(100% - 5px);
+    right: 0;
+    left: 0;
+    padding: 20px;
+    padding-top: 50px;
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1em;
+    background-color: white;
+    z-index: 98;
+    box-shadow: inset 0px 2px 3px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: inset 0px 2px 3px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 0px 2px 3px 0px rgba(0,0,0,0.75);
+}
+
+.main-menu::after{
+    content: '';
+    position: absolute;
+    width: 0; 
+    height: 0; 
+    border-bottom: 300px solid var(--dark); 
+    border-left: 300px solid transparent; 
+    bottom: 0;
+    right: 0;
+    animation: tri 2s;
+
+    
+}
+
+.main-menu ul{
+    padding: 10px;
+    list-style: none;
+}
+
+.main-menu > ul > li{
+    position: relative;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    box-shadow: inset 10px 0px 0px 0px rgba(128, 0, 0, 1);
+    z-index: 3;
+    /* transition: .5s ease-in-out; */
+}
+
+.main-menu > ul > li::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    background-color: rgb(243, 129, 75);
+    background-image: linear-gradient(to right,rgb(243, 129, 75), white);
+    transition: .5s ease-in-out;
+    z-index: -1;
+}
+
+.main-menu > ul > li:not(:nth-of-type(1)):hover::before{
+    width: 100%; 
+}
+
+.main-menu a{
+    text-decoration: none;
+    color: black;
+}
+
+.main-menu-list-logo{
+    display: none;
+}
+
+.main-menu-list-products > span{
+    cursor: pointer;
+}
+
+
+.main-menu-list-products-lists{
+    padding-left: 20px;
+    background-color: white;
+}
+
+.main-menu-list-products-lists.prod-na{
+    display: none;
+}
+
+
+@keyframes tri {
+    from {
+        right: -2000px;
+        bottom: -2000px;
+    }
+    to {
+        right: 0;
+        bottom: 0;
+    }
+}
+
+
+
+@media only screen and (min-width: 480px) {}
+@media only screen and (min-width: 768px) {
+    
+    .main-menu{
+        position: sticky;
+        height: auto;
+        top: 0;
+        right: 0;
+        left: 0;
+        padding: 0px;
+        font-size: .5em;
+        box-shadow: 1px 1px 3px 0 black;
+        /* background-color: var(--matte-g); */
+        background-color: yellow;
+        box-shadow: inset 4px 2px 25px 23px rgba(128, 0, 0, 0.29);
+        transition: 1s ease-in-out;
+    }.main-menu.menu-top{
+        text-shadow: 2px 2px 5px white;
+        font-size: .3em;
+        background-color: transparent;
+        background-image: linear-gradient(rgba(244, 216, 2, 0.5), transparent);
+        box-shadow: none;
+    }
+
+    .main-menu::after{
+        display: none;
+    }
+    
+    .main-menu > ul > li{
+        position: relative;
+        margin-bottom: 0px;
+        box-shadow: none;
+        display: inline-block;
+        /* transition: .5s ease-in-out; */
+    }
+    
+    .main-menu > ul > li::before{
+        content: '';
+        position: absolute;
+        height: 5px;
+        bottom: 0;
+        width: 0%;
+        z-index: -1;
+    }
+    .main-menu.menu-top > ul > li::before{
+        height: 2px;
+    }
+
+    .main-menu-list-logo{
+        margin-right: 20px;
+    }
+
+    .main-menu.menu-top .main-menu-list-logo{
+        margin-right: -50px;
+    }
+    
+    .main-menu-list-logo > a > img{
+        height: 30px;
+        width: auto;
+        transition: 1s ease-in-out;
+    }
+
+    .main-menu.menu-top .main-menu-list-logo > a > img{
+        height: 30px;
+        width: 50%;
+        object-fit: cover;
+        object-position: -42% 0;
+    }
+
+
+
+    .span-arrow{
+        position: relative;
+        margin-right: 5px;
+    }
+    .span-arrow::after{
+        content: '';
+        position: absolute;
+        width: 0; 
+        height: 0;
+        border-top: 5px solid var(--dark);
+        border-left: 5px solid transparent; 
+        border-right: 5px solid transparent;
+        bottom: 45%;
+        right: -15px;
+        /* background-color: var(--dark); */
+    }
+
+    
+    .main-menu-list-products-lists{
+        position: absolute;
+        padding-left: 20px;
+        background-color: white;
+        box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.32);
+    }
+
+    .main-menu.menu-top .main-menu-list-products-lists{
+        font-size: 2em;
+    }
+
+}
+@media only screen and (min-width: 1024px) {}
+@media only screen and (min-width: 1280px) {}
