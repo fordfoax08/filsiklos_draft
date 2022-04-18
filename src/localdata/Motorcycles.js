@@ -8,7 +8,7 @@ const motorcyclesData = [
         originalPrice: 76000,
         ratings: 4.5,
         popular: true,
-        featured: true,
+        featured: false,
         features: [
           [
             "All LED lighting system",

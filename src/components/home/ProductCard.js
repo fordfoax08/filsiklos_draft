@@ -10,7 +10,7 @@ const ProductCard = ({item}) => {
             <div className="product-info">
                 <h2 className="product-brand">{ item.name }</h2>
                 <p className="product-short-description">{ item.shortDesc }</p>
-                <span className="price">$20</span><span className="actual-price"></span>
+                <span className="price">₱{ item.originalPrice.toLocaleString() }</span><span className="actual-price"></span>
             </div>
         </div>
     )

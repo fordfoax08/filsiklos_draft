@@ -5,11 +5,12 @@ import motorcyclesData from '../../localdata/Motorcycles';
 import ProductCard from './ProductCard';
 
 
-const HomeFeatured = () =>{
+const HomeFeatured = ({title}) =>{
     const [data, setData] = useState([]);
     const { width } = useWindowSize();
 
     useEffect(() => {
+        console.log(motorcyclesData);
         function setLocalData() {
             setData(motorcyclesData);
         }
@@ -58,24 +59,33 @@ const HomeFeatured = () =>{
 
     return(
         <div className="featured-product"> 
-        <h2 className="product-category">Featured</h2>
-        <button className="pre-btn"><img src={ process.env.PUBLIC_URL + '/images/arrow.png' } alt="" /></button>
-        <button className="nxt-btn"><img src={ process.env.PUBLIC_URL + '/images/arrow.png' } alt="" /></button>
-        <div className="product-container">
+            <h2 className="product-category">{ title }</h2>
+            <button className="pre-btn"><img src={ process.env.PUBLIC_URL + '/images/arrow.png' } alt="" /></button>
+            <button className="nxt-btn"><img src={ process.env.PUBLIC_URL + '/images/arrow.png' } alt="" /></button>
+            <div className="product-container">
+                
+
+                {
+                    data.map(item => <ProductCard key={ item.id } item={ item }/> )
+                }
+
+                
+
             
 
-            {
-                data.map(item => <ProductCard key={ item.id } item={ item }/> )
-            }
 
-            
-
-
-
-
+            </div>
+            <div className="browse-shop-over"></div>
+            <div className="browse-shop">
+                <h5>BROWSE MORE</h5>
+            </div>
         </div>
-    </div>
     )
+}
+
+
+HomeFeatured.defaultProps = {
+    title: "FEATURED"
 }
 
 export default HomeFeatured;
