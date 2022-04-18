@@ -1,10 +1,9 @@
 import './Home.css';
-import img1 from '../../media/hi1.png';
-import imgLogo2 from '../../media/logo-name-2.png';
 import { useEffect } from 'react';
 import HomeBanner from './HomeBanner';
 import HomeFeatured from './HomeFeatured';
 
+// process.env.PUBLIC_URL+
 const Home = () => {
 
     useEffect(() => {
@@ -21,14 +20,14 @@ const Home = () => {
         <main className="main-home">
             <section className='home-sec-1'>
                 <div className='home-sec1-welcome center'>
-                    <img src={ imgLogo2 } alt='logo' />
+                    <img src={ process.env.PUBLIC_URL+'/banners/logo-name-2.png' } alt='logo' />
                 </div>
                 <div className='home-sec1-desc '>
                     <h4>Motorsiklo para sa mga Pilipino</h4>
                     <p>This motorcycle dealer is in partnership with known Motorcycle company owlrdwide</p>
                 </div>
                 <div className='home-sec1-img center'>
-                    <img src={ img1 } alt="this is for banner"/>
+                    <img src={ process.env.PUBLIC_URL+'/banners/hi1.png' } alt="this is for ico"/>
                 </div>
             </section>
 

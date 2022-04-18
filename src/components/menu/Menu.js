@@ -43,7 +43,7 @@ const Menu = () => {
             { state.toggleMenu && (
             <div className={ `main-menu ${ state.menuTop === 0 ? 'menu-top' : ''}` }>
                 <ul>
-                    <li className='main-menu-list-logo' title='FILSIKLOS Home'><Link to='/' onClick={ handleClick }><img src={ imgLogo } alt='logo' /></Link></li>
+                    <li className='main-menu-list-logo' title='FILSIKLOS Home'><Link to='/' onClick={ handleClick }><img src={ process.env.PUBLIC_URL + '/banners/logo-complete.png' } alt='logo' /></Link></li>
                     <li className='main-menu-list-products'><span className='span-arrow'
                         onClick={ () => setProductIsClicked(!productIsClicked) }
                     >PRODUCTS</span>

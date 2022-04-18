@@ -84,15 +84,17 @@
     transition: 0.5s;
     cursor: pointer;
     opacity: 0;
+    background: transparent;
   }
   
   .product-card:hover .card-btn {
     opacity: 1;
+    color: #fff;
+    text-shadow: 2px 2px 6px black;
   }
   
   .card-btn:hover {
     background: #ff7d7d;
-    color: #fff;
   }
   
   .product-info {
