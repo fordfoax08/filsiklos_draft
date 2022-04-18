@@ -37,6 +37,7 @@ const Home = () => {
 
             <section className='home-featured-product'>
                 <HomeFeatured />
+                <HomeFeatured title={ "POPULAR MOTORCYCLES" } opt={ "popular" } />
             </section>
         </main>
     )

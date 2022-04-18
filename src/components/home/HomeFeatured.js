@@ -5,18 +5,27 @@ import motorcyclesData from '../../localdata/Motorcycles';
 import ProductCard from './ProductCard';
 
 
-const HomeFeatured = ({title}) =>{
+const HomeFeatured = ({title,opt}) =>{
     const [data, setData] = useState([]);
     const { width } = useWindowSize();
 
     useEffect(() => {
-        console.log(motorcyclesData);
+        // console.log(motorcyclesData.filter(item => item.featured));
         function setLocalData() {
-            setData(motorcyclesData);
+            // const filteredData = motorcyclesData.filter(item => item.featured);
+            // setData(filteredData);
+
+            switch(opt){
+                case 'popular':
+                    setData(motorcyclesData.filter(item => item.popular).reverse());
+                    break;
+                default:
+                    setData(motorcyclesData.filter(item => item.featured));
+            }
         }
 
         setLocalData();
-    })
+    }, [])
 
     useEffect(() => {
         const productContainers = [...document.querySelectorAll('.product-container')];

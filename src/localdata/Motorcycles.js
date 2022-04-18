@@ -8,7 +8,7 @@ const motorcyclesData = [
         originalPrice: 76000,
         ratings: 4.5,
         popular: true,
-        featured: false,
+        featured: true,
         features: [
           [
             "All LED lighting system",
@@ -225,7 +225,7 @@ const motorcyclesData = [
         file: "Honda-ADV-150.JPG",
         originalPrice: 126000,
         ratings: 3.5,
-        popular: true,
+        popular: false,
         featured: true,
         features: [
           [
@@ -443,7 +443,7 @@ const motorcyclesData = [
         file: "tmx alpha 125 s.JPG",
         originalPrice: 90000,
         ratings: 3.5,
-        popular: true,
+        popular: false,
         featured: false,
         features: [
           [
