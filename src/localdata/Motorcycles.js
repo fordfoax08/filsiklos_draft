@@ -1,4 +1,3 @@
-
 const motorcyclesData = [
       {
         id: 1,
@@ -878,6 +877,7 @@ const motorcyclesData = [
 
 
 
-
-
     ]
+
+
+export default motorcyclesData;

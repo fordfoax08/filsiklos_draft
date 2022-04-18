@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import useWindowSize from '../hooks/useWindowSize';
 import './HomeFeatured.css';
 import arrowPng from '../../media/images/arrow.png';
@@ -10,14 +11,16 @@ import card6 from '../../media/images/honda_click_150i.JPG';
 import card7 from '../../media/images/yamaha-mio-gear.JPG';
 import card8 from '../../media/images/yamaha-nmax-53577.jpg';
 import { useEffect } from 'react';
-import { motorcyclesData } from '../../localdata/Motorcycles';
+import motorcyclesData from '../../localdata/Motorcycles';
+import ProductCard from './ProductCard';
 
 
 const HomeFeatured = () =>{
+    const [data, setData] = useState([]);
     const { width } = useWindowSize();
 
     useEffect(() => {
-        console.log(motorcyclesData);
+        setData(motorcyclesData);
     })
 
     useEffect(() => {
@@ -65,6 +68,13 @@ const HomeFeatured = () =>{
         <button className="pre-btn"><img src={ arrowPng } alt="" /></button>
         <button className="nxt-btn"><img src={ arrowPng } alt="" /></button>
         <div className="product-container">
+            
+
+            {
+                data.map(item => <ProductCard key={ item.id } item={ item }/> )
+            }
+
+            {/* 
             <div className="product-card">
                 <div className="product-image">
                     <span className="discount-tag">50% off</span>
@@ -161,7 +171,7 @@ const HomeFeatured = () =>{
                     <span className="price">$20</span><span className="actual-price">$40</span>
                 </div>
             </div>
-
+             */}
 
 
 
