@@ -4,7 +4,6 @@ import { useState,useContext, useEffect } from 'react';
 import DataContext from '../../context/DataContext';
 import anime from 'animejs';
 import useWindowSize from '../hooks/useWindowSize';
-import imgLogo from '../../media/logo-complete.png';
 
 const Menu = () => {
     const [productIsClicked, setProductIsClicked] = useState(false);

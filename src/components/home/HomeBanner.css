@@ -127,15 +127,16 @@
 
 
 .banner-bg1{
-    background-image: url("../../media/banner_pcx_mobile.jpg");
+    background-image: url("../../../public/banners/banner_pcx_mobile.jpg");
+    /* background-image: url("../../media/banner_pcx_mobile.jpg"); */
     /* background-image: url('http://placehold.jp/2000x500.png'); */
     
 }
 .banner-bg2{
-    background-image: url("../../media/banner_click_mobile.jpg");
+    background-image: url("../../../public/banners/banner_click_mobile.jpg");
 }
 .banner-bg3{
-    background-image: url("../../media/banner_aerox_mobile.jpg");
+    background-image: url("../../../public/banners/banner_aerox_mobile.jpg");
 }
 
 
@@ -147,15 +148,15 @@
 @media only screen and (min-width: 480px) {}
 @media only screen and (min-width: 768px) {
     .banner-bg1{
-        background-image: url("../../media/banner_pcx.jpg");
+        background-image: url("../../../public/banners/banner_pcx.jpg");
     }
 
     .banner-bg2{
-        background-image: url("../../media/banner_click.jpg");
+        background-image: url("../../../public/banners/banner_click.jpg");
     }
     
     .banner-bg3{
-        background-image: url("../../media/banner_aerox.jpg");
+        background-image: url("../../../public/banners/banner_aerox.jpg");
     }
     
 }
