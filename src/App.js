@@ -27,6 +27,13 @@ function App() {
       const elmt = document.querySelector('.main-menu');
       dispatch({ type: 'menuTop', payload: elmt.getBoundingClientRect().top })
     }
+
+
+    if(document.querySelector('.home-sec1-img').getBoundingClientRect().top <= 325){
+      setTimeout(() => document.querySelector('.home-sec1-img').classList.add('anim'), 1000);
+      // console.log("haun!");
+    }
+
   }
 
   return (
