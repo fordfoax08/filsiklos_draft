@@ -2,6 +2,7 @@ import React from 'react';
 import './Home.css';
 import HomeBanner from './HomeBanner';
 import HomeFeatured from './HomeFeatured';
+import HomeReviews from './HomeReviews';
 import HomeWelcome from './HomeWelcome';
 
 // process.env.PUBLIC_URL+
@@ -28,6 +29,10 @@ const Home = () => {
 
             <section className='img-a'>
                 <img src={ process.env.PUBLIC_URL+'/banners/filski_2.jpg' } alt="details" />
+            </section>
+
+            <section className='home-reviews'>
+                <HomeReviews />
             </section>
 
         </main>

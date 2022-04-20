@@ -8,10 +8,16 @@ html,body{
   width: 100%;
 }
 
+/* 
+font-family: 'Bebas Neue', cursive;
+*/
 /* GLOBAL COLOR */
 :root{
   --dark: rgb(27,27,27);
   --matte-g: rgb(54, 79, 69);
+  --light: rgb(229, 229, 229);
+  --lighter: rgb(212, 212, 212);
+  --yellow-g: rgb(255, 196, 0);
 }
 
 .center{
