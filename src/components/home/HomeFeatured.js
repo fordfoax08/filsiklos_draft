@@ -1,4 +1,4 @@
-import { useState,useEffect } from 'react';
+import React,{ useState,useEffect } from 'react';
 import useWindowSize from '../hooks/useWindowSize';
 import './HomeFeatured.css';
 import motorcyclesData from '../../localdata/Motorcycles';

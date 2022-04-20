@@ -1,3 +1,5 @@
+import React from 'react';
+
 const Motorcycles = () => {
     return(
         <main className="main-motorcycles">

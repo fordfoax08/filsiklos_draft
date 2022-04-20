@@ -1,3 +1,4 @@
+import React from 'react';
 import './HomeBanner.css';
 import { useEffect } from 'react';
 

@@ -1,4 +1,4 @@
-
+import React from 'react';
 import './App.css';
 import Menu from './components/menu/Menu';
 import MenuBtn from './components/menubtn/MenuBtn';

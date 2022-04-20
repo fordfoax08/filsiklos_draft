@@ -1,3 +1,4 @@
+import React from 'react';
 const Helmet = () => {
     return(
         <main className="main-helmet">

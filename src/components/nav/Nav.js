@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import './Nav.css';
-import { useContext } from 'react';
+import React,{ useContext } from 'react';
 import DataContext from '../../context/DataContext';
 import useWindowSize from '../hooks/useWindowSize';
 

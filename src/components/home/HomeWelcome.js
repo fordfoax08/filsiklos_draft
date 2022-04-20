@@ -1,5 +1,5 @@
+import React from 'react';
 import './HomeWelcome.css';
-import { useEffect } from 'react';
 
 const HomeWelcome = () => {
    

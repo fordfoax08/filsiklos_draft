@@ -1,5 +1,6 @@
+import React from 'react';
+
 const ProductCard = ({item}) => {
-    // console.log(item.file)
     return(
         <div className="product-card">
             <div className="product-image">

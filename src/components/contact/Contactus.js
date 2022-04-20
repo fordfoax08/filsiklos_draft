@@ -1,3 +1,5 @@
+import React from 'react';
+
 const Contactus = () => {
     return (
         <main className="main-contact">

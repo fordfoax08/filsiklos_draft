@@ -1,5 +1,5 @@
+import React from 'react';
 import './Home.css';
-import { useEffect } from 'react';
 import HomeBanner from './HomeBanner';
 import HomeFeatured from './HomeFeatured';
 import HomeWelcome from './HomeWelcome';
