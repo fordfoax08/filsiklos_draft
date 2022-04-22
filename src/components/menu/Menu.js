@@ -17,6 +17,7 @@ const Menu = () => {
         if(width <= 767){
             dispatch({ type: 'menuClose' });
         }
+        window.location.href = '#top-nav';
     }
 
     useEffect(() => {

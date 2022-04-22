@@ -12,9 +12,11 @@ import Accessory from './components/product/Accessory';
 import Promo from './components/promo/Promo';
 import News from './components/news/News';
 import Contactus from './components/contact/Contactus';
+import Footer from './components/footer/Footer';
 import DataContext from './context/DataContext';
 import { useContext } from 'react';
 import useWindowSize from './components/hooks/useWindowSize';
+import Missing from './components/errorpage/Missing';
 
 
 function App() {
@@ -23,15 +25,17 @@ function App() {
 
 
   function samp() {
-    if(width >= 768){
-      const elmt = document.querySelector('.main-menu');
-      dispatch({ type: 'menuTop', payload: elmt.getBoundingClientRect().top })
-    }
-
-
-    if(document.querySelector('.home-sec1-img').getBoundingClientRect().top <= 325){
-      setTimeout(() => document.querySelector('.home-sec1-img').classList.add('anim'), 1000);
-      // console.log("haun!");
+    if(window.location.pathname === '/'){
+      if(width >= 768){
+        const elmt = document.querySelector('.main-menu');
+        dispatch({ type: 'menuTop', payload: elmt.getBoundingClientRect().top })
+      }
+  
+  
+      if(document.querySelector('.home-sec1-img').getBoundingClientRect().top <= 325){
+        setTimeout(() => document.querySelector('.home-sec1-img').classList.add('anim'), 1000);
+        // console.log("haun!");
+      }
     }
 
   }
@@ -43,7 +47,6 @@ function App() {
         <Menu />
 
         <Routes>
-          <Route path='/' element={ <Home /> } />
           <Route path='/about' element={ <About /> } />
           <Route path='/motorcycles' element={ <Motorcycles /> } />
           <Route path='/helmet' element={ <Helmet /> } />
@@ -51,7 +54,13 @@ function App() {
           <Route path='/promos' element={ <Promo /> } />
           <Route path='/news' element={ <News /> } />
           <Route path='/contact' element={ <Contactus /> } />
+          <Route path='/404' element={ <Missing /> } />
+          <Route path='*' element={ <Missing /> } />
+          <Route path='/' element={ <Home /> } />
         </Routes>
+
+
+        <Footer />
     </div>
   );
 }

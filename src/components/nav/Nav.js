@@ -20,7 +20,7 @@ const Nav = () => {
     }
     
     return(
-        <nav className='main-nav'>
+        <nav className='main-nav' id="top-nav">
             <ul onClick={ handleClick }>
                 <li className='main-nav-li-link-home li-hidden'  style={hideHome()}><Link to='/' className='main-nav-link-home'>Home</Link></li>
                 <li><Link to='/about' className='main-nav-link-about'>About</Link></li>
