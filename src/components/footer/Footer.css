@@ -108,6 +108,10 @@ footer .footer-contact ul{
     margin-left: 10px;
 }
 
+footer .footer-logo *{
+    display: none;
+}
+
 
 footer .builtby{
     display: none;
@@ -132,6 +136,10 @@ footer .builtby.show{
 
     footer > div:nth-child(2){
         align-items:    initial;
+    }
+
+    footer .footer-logo *{
+        display: block;
     }
 }
 @media only screen and (min-width: 1024px) {}

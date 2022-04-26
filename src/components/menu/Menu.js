@@ -11,6 +11,7 @@ const Menu = () => {
     const { state, dispatch } = useContext(DataContext);
     const { width } = useWindowSize();
 
+
     
     //handleClick to automatically toggle menu when links is clicked
     const handleClick = () => {

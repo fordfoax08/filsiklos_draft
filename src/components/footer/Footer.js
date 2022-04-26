@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { useState,useEffect } from 'react';
 
 const Footer = () => {
+    // jad display copyrights
     const [jad, setJad] = useState(false);
 
     useEffect(() => {

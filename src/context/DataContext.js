@@ -26,11 +26,14 @@ const reducer = (state, action) => {
 const DataContext = createContext({});
 export const DataProvider = ({children}) => {
     const [state, dispatch] = useReducer(reducer, initVal);
+    const scrollToTop = () => {
+        window.location.href = '#top-nav';
+    }
 
 
     return(
         <DataContext.Provider value={{ 
-            state, dispatch
+            state, dispatch, scrollToTop
          }}>
             {children}
         </DataContext.Provider>

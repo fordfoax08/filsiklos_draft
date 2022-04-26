@@ -1,0 +1,102 @@
+.news-banner{
+    height: 40vh;
+    background-color: var(--dark);
+    background-image: url("../../../public/banners/news-banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    font-family: 'Bebas Neue', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 2px 4px 4px black;
+}
+.news-banner:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom right,#002f4b,#000000);
+    opacity: .6; 
+}
+
+.news-banner > h1{
+color: yellow;
+z-index: 2;
+}
+
+.news-container{
+    border: 1px solid red;
+}
+
+.news-body{
+    height: 200px;
+    border: 1px solid green;
+    margin: 20px;
+    position: relative;   
+    overflow: hidden;
+
+}
+
+.news-body:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    /* background-image: linear-gradient(to bottom right,#002f4b,#000000); */
+    background-color: #000000;
+    opacity: .4; 
+}
+
+.news-body img{
+    width: 100%;
+    height: auto;
+    
+}
+
+.news-body-content{
+    position: absolute;
+    top: 85%;
+    left: 0;
+    right: 0;
+    height: 100%;
+    color: var(--lighter);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 300ms all ease-in-out;
+    background-color: rgba(0,0,0,.7);
+}
+
+.news-body:hover .news-body-content{
+    top: 40%;
+}
+
+.news-body-content > a{
+    text-decoration: none;
+    color: var(--lighter);
+}
+
+.news-body-content > p{
+    width: 70%;
+}
+
+
+
+
+
+
+
+@media only screen and (min-width: 480px) {}
+@media only screen and (min-width: 768px) {
+    .news-container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media only screen and (min-width: 1024px) {}
+@media only screen and (min-width: 1280px) {}

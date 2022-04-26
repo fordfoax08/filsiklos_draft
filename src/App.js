@@ -25,13 +25,12 @@ function App() {
 
 
   function samp() {
+    if(width >= 768){
+      const elmt = document.querySelector('.main-menu');
+      dispatch({ type: 'menuTop', payload: elmt.getBoundingClientRect().top })
+      console.log("sdfasd")
+    }
     if(window.location.pathname === '/'){
-      if(width >= 768){
-        const elmt = document.querySelector('.main-menu');
-        dispatch({ type: 'menuTop', payload: elmt.getBoundingClientRect().top })
-      }
-  
-  
       if(document.querySelector('.home-sec1-img').getBoundingClientRect().top <= 325){
         setTimeout(() => document.querySelector('.home-sec1-img').classList.add('anim'), 1000);
         // console.log("haun!");
