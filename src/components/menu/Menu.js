@@ -56,8 +56,8 @@ const Menu = () => {
                         </ul>
                     </li>
                     <li><Link to='/promos' onClick={ handleClick }>PROMO</Link></li>
-                    <li><Link to='/news' onClick={ handleClick }>NEWS & REVIEWS</Link></li>
-                    <li><Link to='/location' onClick={ handleClick }>STORE LOCATION</Link></li>
+                    <li><Link to='/news' onClick={ handleClick }>NEWS UPDATES</Link></li>
+                    <li><Link to='/location' onClick={ handleClick }>BRANCHES</Link></li>
                 </ul>
             </div>
             )}

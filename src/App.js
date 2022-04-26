@@ -17,6 +17,7 @@ import DataContext from './context/DataContext';
 import { useContext } from 'react';
 import useWindowSize from './components/hooks/useWindowSize';
 import Missing from './components/errorpage/Missing';
+import Location from './components/location/Location';
 
 
 function App() {
@@ -27,8 +28,7 @@ function App() {
   function samp() {
     if(width >= 768){
       const elmt = document.querySelector('.main-menu');
-      dispatch({ type: 'menuTop', payload: elmt.getBoundingClientRect().top })
-      console.log("sdfasd")
+      dispatch({ type: 'menuTop', payload: elmt.getBoundingClientRect().top });
     }
     if(window.location.pathname === '/'){
       if(document.querySelector('.home-sec1-img').getBoundingClientRect().top <= 325){
@@ -53,6 +53,7 @@ function App() {
           <Route path='/promos' element={ <Promo /> } />
           <Route path='/news' element={ <News /> } />
           <Route path='/contact' element={ <Contactus /> } />
+          <Route path='/location' element={ <Location /> } />
           <Route path='/404' element={ <Missing /> } />
           <Route path='*' element={ <Missing /> } />
           <Route path='/' element={ <Home /> } />
