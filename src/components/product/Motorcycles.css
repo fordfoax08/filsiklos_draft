@@ -1,0 +1,104 @@
+main.main-motorcycles{
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: column;
+}
+
+main.main-motorcycles > div{
+    /* border: 1px solid red; */
+}
+
+
+.shop-banner{
+    height: 60px;
+    background-color: var(--yellow-g);
+    font-family: 'Bebas Neue', cursive;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.shop-banner > h3 > a{
+    font-size: .8em;
+    text-decoration: none;
+    color: var(--dark);
+}
+
+.shop-menu{
+    background-color: rgba(252, 208, 78, 0.55);
+    padding: 2px;
+    position: relative;
+}.shop-menu.open{
+    padding: 10px;
+}
+
+
+
+.shop-menu-btn{
+    position: absolute;
+    font-size: 1.2em;
+    font-weight: bold;
+    bottom: 0;
+    transform: rotate(90deg);
+    left: 50%;
+    margin-bottom: -25px;
+    border: none;
+    border: .5px solid gray;
+    /* padding-top: 10px;
+    padding-bottom: 10px; */
+    padding: 10px 1px;
+    border-radius: 0px 5px 5px 0px;
+    cursor: pointer;
+    z-index: 2;
+}
+.shop-menu-btn.focus{
+    background-color: var(--yellow-g);
+}
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 480px) {}
+@media only screen and (min-width: 768px) {
+    main.main-motorcycles{
+        display: grid;
+        grid-template-columns: auto 4fr;
+        grid-gap: 0;
+    }
+
+    .shop-banner{
+        grid-area: 1 / 1 / 2 / 3;
+        background-color: var(--dark);
+        color: var(--yellow-g);
+    }
+
+    
+    .shop-banner > h3 > a{
+        color: var(--lighter);
+    }
+
+    .shop-menu{
+        min-height: 70vh;
+        max-width: 25vw;
+        box-shadow: 1px 1px 4px 0px gray;
+        padding: 10px;
+    }
+
+
+    .shop-menu-btn{
+        bottom: unset;
+        transform: rotate(0deg);
+        left: unset;
+        margin-bottom: 0;
+        right: -10px;
+    }
+    
+
+
+}
+@media only screen and (min-width: 1024px) {}
+@media only screen and (min-width: 1280px) {}
