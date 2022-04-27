@@ -55,9 +55,15 @@ main.main-motorcycles > div{
     background-color: var(--yellow-g);
 }
 
+.shop-container{
+    padding: 5px;
+}
 
-
-
+.shop-items-container{
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: auto auto;
+}
 
 
 
@@ -97,6 +103,10 @@ main.main-motorcycles > div{
         right: -10px;
     }
     
+
+    .shop-items-container{
+        grid-template-columns: repeat(4, auto);
+    }
 
 
 }
