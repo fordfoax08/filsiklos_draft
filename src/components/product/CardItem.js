@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import './CardItem.css';
 import useWindowSize from '../hooks/useWindowSize';
 
-function CardItem() {
+function CardItem({ dat }) {
     const { width } = useWindowSize();
     
     
@@ -51,6 +51,7 @@ function CardItem() {
                 /* Add listener for mouseout event, remove the rotation */
                 el.addEventListener('mouseout', function() {
                     el.style.transform = 'perspective(500px) scale(1) rotateX(0) rotateY(0)'
+                    // el.removeEventListener('mousemove', handleMove);
                 })
                 
                 /* Add listener for mousedown event, to simulate click */
@@ -74,7 +75,14 @@ function CardItem() {
 
   return (
     <div className='item-card'>
-        a
+        <div className='item-card-image-container'>
+            <img src={ `/images/${dat.file}`} alt="honda click" />
+        </div>
+        <div className='item-card-details-container'>
+            <h5>{ dat.name }</h5>
+            <p>{ dat.shortDesc }</p>
+            <h1>₱ { dat.originalPrice.toLocaleString() }</h1>
+        </div>
     </div>
   )
 }

@@ -16,12 +16,22 @@ main.main-motorcycles > div{
     display: flex;
     align-items: center;
     padding-left: 20px;
+    position: relative;
+    overflow: hidden;
+
 }
 
 .shop-banner > h3 > a{
     font-size: .8em;
     text-decoration: none;
     color: var(--dark);
+}
+
+.shop-banner > img{
+    position: absolute;
+    top: -25px;
+    right: -15px;
+    opacity: .5;
 }
 
 .shop-menu{
@@ -106,6 +116,7 @@ main.main-motorcycles > div{
 
     .shop-items-container{
         grid-template-columns: repeat(4, auto);
+        justify-content:  space-evenly;
     }
 
 
