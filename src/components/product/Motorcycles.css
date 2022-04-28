@@ -35,7 +35,7 @@ main.main-motorcycles > div{
 }
 
 .shop-menu{
-    background-color: rgba(252, 208, 78, 0.55);
+    background-color: rgba(179, 179, 179, 0.55);
     padding: 2px;
     position: relative;
 }.shop-menu.open{
@@ -75,6 +75,44 @@ main.main-motorcycles > div{
     grid-template-columns: auto auto;
 }
 
+
+
+.shop-pagination-container{
+    height: 30px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding-right: 10px;
+}
+
+.shop-pagination-container button{
+    text-align: center;
+    border: .4px solid rgba(0, 0, 0,.3);
+    height: 25px;
+    width: 35px;
+    cursor: pointer;
+}
+
+.shop-pagination-container button:hover{
+    background-color: rgb(195, 195, 195);
+}
+
+.shop-page-prev,
+.shop-page-next{
+    font-weight: bolder;
+    background-color: var(--dark);
+    color: var(--lighter);
+}
+
+.shop-pagination-container button.active{
+    background-color: rgb(148, 125, 72);
+    color: var(--lighter);
+}
+
+.shop-page-prev.max,
+.shop-page-next.max{
+    background-color: gray;
+}
 
 
 

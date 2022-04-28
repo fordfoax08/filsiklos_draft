@@ -28,6 +28,15 @@ const Motorcycles = () => {
                 <div className='shop-items-container'>
                     { data.length && data.map(dat => <CardItem dat={ dat } key={dat.id} /> ) }
                 </div>
+                <div className='shop-pagination-container'>
+                    <button  className='shop-page-prev max'>«</button>
+                    <button  className='shop-page-1'>1</button>
+                    <button  className='shop-page-2 active'>2</button>
+                    <button  className='shop-page-3'>3</button>
+                    <button  className='shop-page-remain'>...</button>
+                    <button  className='shop-page-last'>55</button>
+                    <button  className='shop-page-next'>»</button>
+                </div>
             </div>
         </main>
     )

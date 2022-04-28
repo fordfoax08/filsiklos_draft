@@ -19,6 +19,7 @@ const Menu = () => {
             dispatch({ type: 'menuClose' });
         }
         window.location.href = '#top-nav';
+        setProductIsClicked(!productIsClicked);
     }
 
     useEffect(() => {

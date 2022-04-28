@@ -5,7 +5,7 @@
     min-height: 300px;
     /* width: 50%; */
     /* background-color: dimgray; */
-    background-image: linear-gradient(to top, rgb(152, 152, 152), white);
+    background-image: linear-gradient(to top, rgb(169, 144, 44), white);
     border-radius: 5px;
     transition: box-shadow 0.1s, transform 0.1s;
     cursor: pointer;
