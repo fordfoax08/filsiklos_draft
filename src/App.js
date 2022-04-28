@@ -18,6 +18,7 @@ import { useContext } from 'react';
 import useWindowSize from './components/hooks/useWindowSize';
 import Missing from './components/errorpage/Missing';
 import Location from './components/location/Location';
+import MotorcycleDetails from './components/product/MotorcycleDetails';
 
 
 function App() {
@@ -48,6 +49,7 @@ function App() {
         <Routes>
           <Route path='/about' element={ <About /> } />
           <Route path='/motorcycles' element={ <Motorcycles /> } />
+          <Route path='/motorcycles/:id' element={ <MotorcycleDetails /> } />
           <Route path='/helmet' element={ <Helmet /> } />
           <Route path='/accessories' element={ <Accessory /> } />
           <Route path='/promos' element={ <Promo /> } />

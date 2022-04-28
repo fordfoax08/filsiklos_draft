@@ -42,7 +42,7 @@
 
 .item-card-details-container > h1{
     font-family: 'Bebas Neue', cursive;
-    text-shadow: 3px 4px 4px #796100;
+    /* text-shadow: 3px 4px 4px #796100; */
     color: rgb(30, 30, 30);
 }
 

@@ -1,11 +1,17 @@
 import React, { useEffect } from 'react';
 import './CardItem.css';
 import useWindowSize from '../hooks/useWindowSize';
+import { useNavigate } from 'react-router-dom';
+
 
 function CardItem({ dat }) {
     const { width } = useWindowSize();
+    const navigate = useNavigate();
     
-    
+    function handleNavigate() {
+        navigate(`/motorcycles/${ dat.id }`);
+    }
+
     useEffect(() => {
 
         const animateCard = () => {
@@ -74,7 +80,7 @@ function CardItem({ dat }) {
     }, [width])
 
   return (
-    <div className='item-card'>
+    <div className='item-card' onClick={ handleNavigate }>
         <div className='item-card-image-container'>
             <img src={ `/images/${dat.file}`} alt="honda click" />
         </div>

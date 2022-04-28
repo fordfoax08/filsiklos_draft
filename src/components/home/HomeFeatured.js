@@ -3,11 +3,18 @@ import useWindowSize from '../hooks/useWindowSize';
 import './HomeFeatured.css';
 import motorcyclesData from '../../localdata/Motorcycles';
 import ProductCard from './ProductCard';
+import { useNavigate } from 'react-router-dom';
 
 
 const HomeFeatured = ({title,opt}) =>{
     const [data, setData] = useState([]);
     const { width } = useWindowSize();
+    const navigate = useNavigate();
+
+    function handleNavigateShop(){
+        window.location.href = '#top-nav';
+        navigate("/motorcycles");
+    }
 
     useEffect(() => {
         // console.log(motorcyclesData.filter(item => item.featured));
@@ -85,7 +92,7 @@ const HomeFeatured = ({title,opt}) =>{
 
             </div>
             <div className="browse-shop-over"></div>
-            <div className="browse-shop">
+            <div className="browse-shop" onClick={ handleNavigateShop }>
                 <h5>BROWSE MORE</h5>
             </div>
         </div>

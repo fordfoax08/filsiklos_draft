@@ -1,0 +1,28 @@
+.main-motorcycledetails{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.m-m-mini-navig{
+    border: 1px solid red;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.m-m-mini-navig > div{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 1.3em;
+}
+
+
+
+
+
+@media only screen and (min-width: 480px) {}
+@media only screen and (min-width: 768px) {}
+@media only screen and (min-width: 1024px) {}
+@media only screen and (min-width: 1280px) {}

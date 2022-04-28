@@ -5,7 +5,7 @@ function ShopMenu() {
   return (
     <form className='form-shop' onSubmit={ e => e.preventDefault() }>
         <label htmlFor='search-shop'>Search:</label>
-        <input type="text" id="search" className='search-shop' name='search' placeholder='Search'/>
+        <input type="text" id="search-shop" className='search-shop' name='search' placeholder='Search' title="search box"/>
         <div className='sort-container'>
             <p>Filter</p>
             <label htmlFor='sort-shop'></label>
