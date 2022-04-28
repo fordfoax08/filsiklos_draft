@@ -19,6 +19,7 @@ import useWindowSize from './components/hooks/useWindowSize';
 import Missing from './components/errorpage/Missing';
 import Location from './components/location/Location';
 import MotorcycleDetails from './components/product/MotorcycleDetails';
+import Shop from './components/product/Shop';
 
 
 function App() {
@@ -48,9 +49,9 @@ function App() {
 
         <Routes>
           <Route path='/about' element={ <About /> } />
-          <Route path='/motorcycles' element={ <Motorcycles /> } />
+          <Route path='/motorcycles' element={ <Shop title="MOTORCYCLES" /> } />
           <Route path='/motorcycles/:id' element={ <MotorcycleDetails /> } />
-          <Route path='/helmet' element={ <Helmet /> } />
+          <Route path='/helmets' element={ <Shop title="HELMETS" /> } />
           <Route path='/accessories' element={ <Accessory /> } />
           <Route path='/promos' element={ <Promo /> } />
           <Route path='/news' element={ <News /> } />

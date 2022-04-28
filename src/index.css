@@ -30,6 +30,11 @@ font-family: 'Boogaloo', cursive;
   align-items: center;
 }
 
+.hidden{
+  display: none;
+}
+
+
 
 
 body {
