@@ -45,7 +45,6 @@ font-family: 'Roboto', sans-serif;
 
 
 .home-featured-product{
-    /* border: 1px solid red; */
     margin-top: -30px;
     border-radius: 40px 40px 0 0;
     z-index: 1;
@@ -58,6 +57,15 @@ font-family: 'Roboto', sans-serif;
 section.img-a img{
     width: 100%;
     height: auto;
+}
+
+
+.home-search-product{
+    border: 2px solid green;
+    background-color: var(--dark);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode:lighten;
 }
 
 

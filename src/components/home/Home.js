@@ -3,6 +3,7 @@ import './Home.css';
 import HomeBanner from './HomeBanner';
 import HomeFeatured from './HomeFeatured';
 import HomeReviews from './HomeReviews';
+import HomeSearchProduct from './HomeSearchProduct';
 import HomeWelcome from './HomeWelcome';
 
 // process.env.PUBLIC_URL+
@@ -27,11 +28,13 @@ const Home = () => {
                 <HomeWelcome />
             </section>
 
+            <section className='home-search-product' style={{ backgroundImage: `url("${ '/banners/darkban.jpg' }")` }}>
+                <HomeSearchProduct />
+            </section>
+
             <section className='home-reviews'>
                 <HomeReviews />
             </section>
-
-
 
             <section className='img-a'>
                 <img src={ process.env.PUBLIC_URL+'/banners/filski_2.jpg' } alt="details" />
