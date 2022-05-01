@@ -1,10 +1,12 @@
 import './Footer.css';
 import { Link } from 'react-router-dom';
-import { useState,useEffect } from 'react';
+import { useState,useEffect,useContext } from 'react';
+import DataContext from '../../context/DataContext';
 
 const Footer = () => {
     // jad display copyrights
     const [jad, setJad] = useState(false);
+    const { topFocus } = useContext(DataContext);
 
     useEffect(() => {
         

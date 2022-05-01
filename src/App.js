@@ -6,8 +6,6 @@ import Nav from './components/nav/Nav';
 import { Routes, Route } from 'react-router-dom';
 import Home from './components/home/Home';
 import About from './components/about/About';
-import Motorcycles from './components/product/Motorcycles';
-import Helmet from './components/product/Helmet';
 import Accessory from './components/product/Accessory';
 import Promo from './components/promo/Promo';
 import News from './components/news/News';
@@ -34,7 +32,7 @@ function App() {
     }
     if(window.location.pathname === '/'){
       if(document.querySelector('.home-sec1-img').getBoundingClientRect().top <= 325){
-        setTimeout(() => document.querySelector('.home-sec1-img').classList.add('anim'), 1000);
+        setTimeout(() => document.querySelector('.home-sec1-img').classList.add('anim'), 500);
         // console.log("haun!");
       }
     }

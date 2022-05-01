@@ -1,4 +1,4 @@
-import { createContext, useReducer } from "react";
+import { createContext, useReducer, useRef } from "react";
 
 
 const initVal = {
@@ -26,6 +26,9 @@ const reducer = (state, action) => {
 const DataContext = createContext({});
 export const DataProvider = ({children}) => {
     const [state, dispatch] = useReducer(reducer, initVal);
+  
+    
+
     const scrollToTop = () => {
         window.location.href = '#top-nav';
     }

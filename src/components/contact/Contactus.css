@@ -1,0 +1,101 @@
+.contact-banner{
+    /* height: 50vh; */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.contact-info > div{
+    border: 1px solid red;
+}
+.contact-banner > img{
+    visibility: hidden;
+    width: 100%;
+    height: auto;
+}
+
+.contact-banner-text{
+    position: absolute;
+    color: var(--lighter);
+    top: 20%;
+    text-shadow: 4px 4px 7px rgba(0, 0, 0, 0.72);
+    padding: 20px;
+}
+
+.contact-banner-text > a {
+    padding: 10px;
+    display: flex;
+    font-family: 'Bebas Neue', cursive;
+    font-style: italic;
+    text-decoration: none;
+    color: white;
+}
+
+
+
+.contact-social{
+    padding: 20px;
+}
+
+.contact-social > ul{
+    list-style: none;
+}
+
+.contact-social > ul > li{
+    padding: 5px;
+}
+
+.contact-social > ul > li > a {
+    text-decoration: none;
+    color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: bold;
+}
+
+.contact-social > ul > li > a > svg{
+    height: 1.2em;
+    margin-right: 10px;
+}
+
+
+
+
+
+
+
+@media only screen and (min-width: 480px) {}
+@media only screen and (min-width: 768px) {
+    .contact-banner{
+        height: 300px;
+    }
+
+    .contact-banner{
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    .contact-info{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    
+    .contact-info > div{
+
+        margin: 10px;
+        background-color: white;
+    }
+
+    .contact-social{
+        flex-grow: 2;
+    }
+
+    .contact-form{
+        flex-grow: 8;
+    }
+}
+@media only screen and (min-width: 1024px) {}
+@media only screen and (min-width: 1280px) {}

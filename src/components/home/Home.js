@@ -27,12 +27,14 @@ const Home = () => {
                 <HomeWelcome />
             </section>
 
-            <section className='img-a'>
-                <img src={ process.env.PUBLIC_URL+'/banners/filski_2.jpg' } alt="details" />
-            </section>
-
             <section className='home-reviews'>
                 <HomeReviews />
+            </section>
+
+
+
+            <section className='img-a'>
+                <img src={ process.env.PUBLIC_URL+'/banners/filski_2.jpg' } alt="details" />
             </section>
 
         </main>

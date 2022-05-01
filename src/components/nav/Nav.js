@@ -8,6 +8,8 @@ import useWindowSize from '../hooks/useWindowSize';
 const Nav = () => {
     const { dispatch } = useContext(DataContext);
     const { width } = useWindowSize();
+
+
     
     const hideHome = () => {
         if(width >= 768) return { display: 'none'};

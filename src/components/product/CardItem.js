@@ -117,7 +117,7 @@ const MotorcycleCard = ({data, width, animateCard}) => {
     const navigate = useNavigate();
 
     useEffect(() => {
-        console.log("sdfsdf")
+        // console.log("sdfsdf")
         if(width >= 768){
             animateCard();
         };
