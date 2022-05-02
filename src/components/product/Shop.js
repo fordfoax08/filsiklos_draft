@@ -12,7 +12,7 @@ const Shop = ({ title }) => {
     const location = useLocation();
 
     useEffect(() => {
-        if(location.pathname === '/helmets') setData(helmetData);
+        // if(location.pathname === '/helmets') setData(helmetData);
         if(location.pathname === '/accessories') setData(helmetData);
         if(location.pathname === '/motorcycles') setData(motorcyclesData);
         // use window location pathname for dependency

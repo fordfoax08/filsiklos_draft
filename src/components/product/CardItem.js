@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useMemo } from 'react';
+import React, { useEffect, useState } from 'react';
 import './CardItem.css';
 import useWindowSize from '../hooks/useWindowSize';
 import { useNavigate, useLocation } from 'react-router-dom';
@@ -77,8 +77,8 @@ function CardItem({ dat }) {
   return (
         <>
             { location.includes("motor") && <MotorcycleCard data={ dat } animateCard={ animateCard } width={ width }/> }
-            { location.includes("helmets") && <HelmetCard data={ dat } animateCard={ animateCard } width={ width }/> }
-            { location.includes("acces") && <HelmetCard data={ dat } animateCard={ animateCard } width={ width }/> }
+            {/* { location.includes("helmets") && <HelmetCard data={ dat } animateCard={ animateCard } width={ width }/> } */}
+            { location.includes("acces") && <AccessoryCard data={ dat } animateCard={ animateCard } width={ width }/> }
         </>
   )
 }
@@ -87,6 +87,31 @@ function CardItem({ dat }) {
 
 
 // modules
+
+const AccessoryCard = ({data, width, animateCard}) => {
+
+    useEffect(() => {
+        console.log("sdfsdf")
+        if(width >= 768){
+            animateCard();
+        };
+    }, [width])
+    
+
+    return(
+        <div className='item-card'>
+            <div className='item-card-image-container'>
+                <img src={ `/images/${data.file}`} alt="honda click" />
+            </div>
+            <div className='item-card-details-container'>
+                <h5>{ data.name }</h5>
+                <p>{ data.shortDesc }</p>
+                <h1>₱ { data.originalPrice.toLocaleString() }</h1>
+            </div>
+        </div>
+    )
+}
+
 
 const HelmetCard = ({data, width, animateCard}) => {
 

@@ -54,7 +54,7 @@ const Menu = () => {
                     >PRODUCTS</span>
                         <ul className={`main-menu-list-products-lists ${ !productIsClicked && 'prod-na' }`}>
                             <li><Link to='/motorcycles' onClick={ handleClick }>Motorcycles</Link></li>
-                            <li><Link to='/helmets' onClick={ handleClick }>Helmet</Link></li>
+                            {/* <li><Link to='/helmets' onClick={ handleClick }>Helmet</Link></li> */}
                             <li><Link to='/accessories' onClick={ handleClick }>Accesories</Link></li>
                         </ul>
                     </li>
