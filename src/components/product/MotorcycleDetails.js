@@ -25,7 +25,7 @@ function MotorcycleDetails() {
                 <h6>Back</h6>
             </div>
         </div>
-        <h1> { data.name } </h1>
+        <h1 className='moto-details-name'> { data.name } </h1>
         <div className='moto-details-container'>
             <div className='moto-details-image-container'>
                 <img src={ `/images/${ data.file }` } alt="motor" />

@@ -2,7 +2,7 @@
 
 .item-card{
     margin: 12px;
-    min-height: 300px;
+    min-height: 270px;
     /* width: 50%; */
     /* background-color: dimgray; */
     background-image: linear-gradient(to top, rgb(169, 144, 44), white);

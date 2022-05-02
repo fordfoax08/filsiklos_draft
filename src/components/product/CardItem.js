@@ -91,7 +91,6 @@ function CardItem({ dat }) {
 const AccessoryCard = ({data, width, animateCard}) => {
 
     useEffect(() => {
-        console.log("sdfsdf")
         if(width >= 768){
             animateCard();
         };

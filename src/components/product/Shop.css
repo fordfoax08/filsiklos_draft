@@ -117,6 +117,22 @@ main.main-shop > div{
 }
 
 
+.shop-suggestion-container{
+    /* border-radius: 40px 40px 0 0; */
+    z-index: 1;
+    background-color: white;
+    margin-top: 20px;
+}
+
+.shop-suggestion-container > h2 {
+    padding: 10px;
+    padding-bottom: 5px;
+    color: var(--dark);
+    font-family: 'Bebas Neue', cursive;
+    margin-left: 20px;
+    letter-spacing: 1px;
+}
+
 
 @media only screen and (min-width: 480px) {}
 @media only screen and (min-width: 768px) {
@@ -152,12 +168,15 @@ main.main-shop > div{
         margin-bottom: 0;
         right: -10px;
     }
-    
+
 
     .shop-items-container{
         grid-template-columns: repeat(4, auto);
         justify-content:  space-evenly;
     }
+
+
+   
 
 
 }
