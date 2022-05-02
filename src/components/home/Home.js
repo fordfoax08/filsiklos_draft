@@ -32,6 +32,10 @@ const Home = () => {
                 <HomeSearchProduct />
             </section>
 
+            <section className='home-deals' style={{ backgroundImage: `url("${ '/banners/banner-sunset.jpg' }")` }}>
+
+            </section>
+
             <section className='home-reviews'>
                 <HomeReviews />
             </section>

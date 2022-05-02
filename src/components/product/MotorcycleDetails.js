@@ -14,6 +14,7 @@ function MotorcycleDetails() {
         setData(dat[0]);
     }, [id])
 
+
   return (
     <main className='main-motorcycledetails'>
         <div className='m-m-mini-navig'>
@@ -25,6 +26,53 @@ function MotorcycleDetails() {
             </div>
         </div>
         <h1> { data.name } </h1>
+        <div className='moto-details-container'>
+            <div className='moto-details-image-container'>
+                <img src={ `/images/${ data.file }` } alt="motor" />
+                <div className='moto-color-container'>
+                    <div className='color-group'>
+                        <p>Colos:</p>
+                        { data.colors && data.colors.length && data.colors.map((cols, key) => <div className='moto-color' style={{ backgroundColor: `${ cols.colorVar }`}} key={ key }></div>)}
+                    </div>
+                </div>
+            </div>
+            <div className='moto-details-desc'>
+                <p>{ data.longDesc }</p>
+            </div>
+            <div className='moto-details-features'>
+                <h2>Features</h2>
+                { data.features && data.features.length && (
+                    <table>
+                        <tbody>
+                            { data.features.map((item, key) => (
+                                <tr key={ key }>
+                                    <td>{ item[0] }</td>
+                                    <td>{ item[1] }</td>
+                                </tr>
+                            ))}
+                        </tbody>
+                    </table>
+                )}
+            </div>
+            <div className='moto-details-specs'>
+                <h2>Specification</h2>
+                { data.specification && data.specification.length && (
+                    <table>
+                        <tbody>
+                            { data.specification.map((item, key) => (
+                                <tr key={ key }>
+                                    <td>{ item[0] }</td>
+                                    <td>{ item[1] }</td>
+                                </tr>
+                            ))}
+                        </tbody>
+                    </table>
+                )}
+            </div>
+        </div>
+        <div className='more-details'>
+            <p>* for more info visit our nearest branch, or message us directly.</p>
+        </div>
     </main>
   )
 }

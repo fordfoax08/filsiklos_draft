@@ -49,8 +49,8 @@ function App() {
           <Route path='/about' element={ <About /> } />
           <Route path='/motorcycles' element={ <Shop title="MOTORCYCLES" /> } />
           <Route path='/motorcycles/:id' element={ <MotorcycleDetails /> } />
-          <Route path='/helmets' element={ <Shop title="HELMETS" /> } />
-          <Route path='/accessories' element={ <Accessory /> } />
+          <Route path='/helmets' element={ <Shop title="ACCESSORIES" /> } />
+          <Route path='/accessories' element={ <Shop title="ACCESSORIES" /> } />
           <Route path='/promos' element={ <Promo /> } />
           <Route path='/news' element={ <News /> } />
           <Route path='/contact' element={ <Contactus /> } />

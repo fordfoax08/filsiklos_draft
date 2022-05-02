@@ -78,6 +78,7 @@ function CardItem({ dat }) {
         <>
             { location.includes("motor") && <MotorcycleCard data={ dat } animateCard={ animateCard } width={ width }/> }
             { location.includes("helmets") && <HelmetCard data={ dat } animateCard={ animateCard } width={ width }/> }
+            { location.includes("acces") && <HelmetCard data={ dat } animateCard={ animateCard } width={ width }/> }
         </>
   )
 }

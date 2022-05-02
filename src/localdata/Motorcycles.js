@@ -87,7 +87,7 @@ const motorcyclesData = [
         ],
         colors: [
           {
-            colorVar: "#FFA500",
+            colorVar: "#FF0000",
             colorName: "Orange",
             colorLink: "C:/path"
           },

@@ -14,8 +14,6 @@ font-family: 'Roboto', sans-serif;
 
 
 .main-home{
-    /* border: 1px solid red; */
-    /* height: 1000px; */
     display: flex;
     flex-direction: column;
 }
@@ -61,7 +59,6 @@ section.img-a img{
 
 
 .home-search-product{
-    border: 2px solid green;
     background-color: var(--dark);
     background-size: cover;
     background-repeat: no-repeat;
@@ -70,6 +67,27 @@ section.img-a img{
 
 
 
+
+.home-deals{
+    border: 2px solid green;
+    height: 70vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    position: relative;
+}
+
+.home-deals::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    opacity: .7;
+}
 
 
 
