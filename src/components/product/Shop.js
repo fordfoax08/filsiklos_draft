@@ -6,6 +6,7 @@ import CardItem from './CardItem';
 import motorcyclesData from '../../localdata/Motorcycles';
 import helmetData from '../../localdata/HelmetData';
 import HomeFeatured from '../home/HomeFeatured';
+import CardSuggest from './CardSuggest';
 
 const Shop = ({ title }) => {
     const [shopMenu, setShopMenu] = useState(false);
@@ -47,6 +48,13 @@ const Shop = ({ title }) => {
 
                 <div className='shop-suggestion-container'>
                     <h2>Accessories</h2>
+                    <div className='shop-suggest'>
+                        <CardSuggest />
+                        <CardSuggest />
+                        <CardSuggest />
+                        <CardSuggest />
+                        <CardSuggest />
+                    </div>
                     {/* <HomeFeatured title={ "POPULAR MOTORCYCLES" } opt={ "popular" } /> */}
                 </div>
             </div>

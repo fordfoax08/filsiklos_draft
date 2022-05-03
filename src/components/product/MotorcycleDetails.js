@@ -31,12 +31,17 @@ function MotorcycleDetails() {
                 <img src={ `/images/${ data.file }` } alt="motor" />
                 <div className='moto-color-container'>
                     <div className='color-group'>
-                        <p>Colos:</p>
+                        <p>Colors:</p>
                         { data.colors && data.colors.length && data.colors.map((cols, key) => <div className='moto-color' style={{ backgroundColor: `${ cols.colorVar }`}} key={ key }></div>)}
                     </div>
                 </div>
             </div>
             <div className='moto-details-desc'>
+                <div className='moto-price-container'>
+                    <h1><span>SRP:</span> ₱{ data.originalPrice && data.originalPrice.toLocaleString() }</h1>
+                    <h5><span>Monthly:</span> { data.originalPrice && Math.round((data.originalPrice) / 36).toLocaleString()}</h5>
+                    <p>* Prices are indicative prices only and may be different at the branch. Prices are subject to change without prior notice.</p>
+                </div>
                 <p>{ data.longDesc }</p>
             </div>
             <div className='moto-details-features'>

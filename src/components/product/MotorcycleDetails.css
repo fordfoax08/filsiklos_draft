@@ -57,6 +57,40 @@
     padding: 10px;
 }
 
+.moto-price-container{
+    /* height: 150px; */
+    padding: 20px;
+    padding-top: 10px;
+    background-color: var(--dark);
+    border-radius: 5px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.moto-price-container > h1,
+.moto-price-container > h5{
+    text-align: center;
+    color: var(--yellow-g);
+    
+}
+.moto-price-container > h5{
+    margin-bottom: 10px;
+}
+
+.moto-price-container > p{
+    transform: scale(.7);
+    color: var(--lighter);
+    position: absolute;
+    opacity: .5;
+    margin-top: -20px;
+}
+
+.moto-price-container > h1 > span,
+.moto-price-container > h5 > span{
+    /* color: var(--light); */
+    opacity: .8;
+}
+
 .moto-details-features{
     padding: 10px;
 }
@@ -71,7 +105,7 @@
 .moto-details-features > table tbody,
 .moto-details-features > table tbody > tr,
 .moto-details-features > table tbody > tr > td{
-    border: 1px solid rgb(125, 125, 125);
+    border: 1px solid rgb(197, 197, 197);
 }
 
 .moto-details-features > table tbody > tr,
@@ -100,7 +134,7 @@
 .moto-details-specs > table tbody,
 .moto-details-specs > table tbody > tr,
 .moto-details-specs > table tbody > tr > td{
-    border: 1px solid rgb(125, 125, 125);
+    border: 1px solid rgb(190, 190, 190);
 }
 
 .moto-details-specs > table tbody > tr,
@@ -110,7 +144,8 @@
 }
 
 .moto-details-specs > table tbody > tr > td:nth-of-type(odd){
-    width: 40%;
+    width: 35%;
+    text-align: left;
 }
 
 .moto-details-specs > table tbody > tr:nth-of-type(odd){
@@ -122,6 +157,8 @@
     padding: 10px;
     font-size: .8em;
 }
+
+
 
 
 
@@ -143,6 +180,7 @@
     }
     .moto-details-specs{
         grid-area: 3 / 1 / 4 / 3;
+        padding: 0 10%;
     }
 }
 @media only screen and (min-width: 1024px) {}
