@@ -18,6 +18,7 @@ import Missing from './components/errorpage/Missing';
 import Location from './components/location/Location';
 import MotorcycleDetails from './components/product/MotorcycleDetails';
 import Shop from './components/product/Shop';
+import Maintenance from './components/errorpage/Maintenance';
 
 
 function App() {
@@ -55,7 +56,7 @@ function App() {
           <Route path='/news' element={ <News /> } />
           <Route path='/contact' element={ <Contactus /> } />
           <Route path='/location' element={ <Location /> } />
-          <Route path='/404' element={ <Missing /> } />
+          <Route path='/unavailable' element={ <Maintenance /> } />
           <Route path='*' element={ <Missing /> } />
           <Route path='/' element={ <Home /> } />
         </Routes>

@@ -75,14 +75,14 @@ const Footer = () => {
             <div className='footer-logo'>
                 <h4>OTHER LINKS</h4>
                 <ul>
-                    <li><Link to="/maintenance">Home</Link></li>
-                    <li><Link to="/maintenance">About</Link></li>
-                    <li><Link to="/maintenance">Terms</Link></li>
-                    <li><Link to="/maintenance">Loan</Link></li>
-                    <li><Link to="/maintenance">Supplier</Link></li>
-                    <li><Link to="/maintenance">Motorcycles</Link></li>
-                    <li><Link to="/maintenance">News</Link></li>
-                    <li><Link to="/maintenance">Contacts</Link></li>
+                    <li><Link to="/unavailable">Home</Link></li>
+                    <li><Link to="/unavailable">About</Link></li>
+                    <li><Link to="/unavailable">Terms</Link></li>
+                    <li><Link to="/unavailable">Loan</Link></li>
+                    <li><Link to="/unavailable">Supplier</Link></li>
+                    <li><Link to="/unavailable">Motorcycles</Link></li>
+                    <li><Link to="/unavailable">News</Link></li>
+                    <li><Link to="/unavailable">Contacts</Link></li>
                 </ul>
             </div>
             <div className='footer-allrights'>
